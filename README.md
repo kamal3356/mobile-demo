@@ -16,7 +16,6 @@ Kelas 2E
 7.
 8.
 9. 361955401131 - Yusuf Farhan Nurrahman
-12. 361955401135 - Alifia Helda Cahyani
 
 
 Kelas 2F
@@ -33,3 +32,4 @@ Kelas 2F
 13. 361955401170 - Nataryn Silkynta Wiridilla Malawangi
 14. 361955401151 - Anisya Mega Rifdiana
 15. 361955401165 - Erica Septiyana
+16. 361955401161 - Via Antika
