@@ -9,6 +9,14 @@ Kelas 2D
 Kelas 2E
 1. 361955401137 - Bharamiyati Athalas Bharka
 2.
+3.
+4.
+5.
+6.
+7.
+8.
+9. 361955401131 - Yusuf Farhan Nurrahman
+
 
 Kelas 2F
 1.361955401155 - Rohmad Kurniadi
