@@ -30,3 +30,4 @@ Kelas 2F
 11. 361955401150 - Yasika Ekki Permana
 12. 361955401153 - hilmi bakhtiar
 13. 361955401170 - Nataryn Silkynta Wiridilla Malawangi
+14. 361955401151 - Anisya Mega Rifdiana
