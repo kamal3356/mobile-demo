@@ -27,3 +27,5 @@ Kelas 2F
 7. 361955401157 - Mukhamad Ivan Alvian
 <br>
 8. 361955401177 - Bagus Ika Putranto
+<br>
+9. 361955401152 - Satria Teguh Perkasa
