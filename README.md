@@ -25,3 +25,5 @@ Kelas 2F
 6. 361955401158 - Wahyu Ryan Refany
 <br>
 7. 361955401157 - Mukhamad Ivan Alvian
+<br>
+8. 361955401177 - Bagus Ika Putranto
