@@ -67,6 +67,7 @@ class _MainPageState extends State<MainPage> {
                     ),
                   ),
                   onPressed: () {
+                    // ignore: deprecated_member_use
                     context.bloc<PageBloc>().add(GoToTopUpPage(GoToMainPage()));
                   }),
             ),
@@ -101,6 +102,7 @@ class _MainPageState extends State<MainPage> {
                 },
                 items: [
                   BottomNavigationBarItem(
+                      // ignore: deprecated_member_use
                       title: Text("New Movies",
                           style: GoogleFonts.raleway(
                               fontSize: 13, fontWeight: FontWeight.w600)),
@@ -112,6 +114,7 @@ class _MainPageState extends State<MainPage> {
                             : "assets/ic_movie_grey.png"),
                       )),
                   BottomNavigationBarItem(
+                      // ignore: deprecated_member_use
                       title: Text("My Tickets",
                           style: GoogleFonts.raleway(
                               fontSize: 13, fontWeight: FontWeight.w600)),

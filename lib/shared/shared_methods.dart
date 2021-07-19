@@ -1,6 +1,7 @@
 part of 'shared.dart';
 
 Future<File> getImage() async {
+  // ignore: deprecated_member_use
   var image = await ImagePicker.pickImage(source: ImageSource.gallery);
   return image;
 }
@@ -16,18 +17,18 @@ Future<String> uploadImage(File image) async {
 }
 
 Widget generateDashedDivider(double width) {
-    int n = width ~/ 5;
-    return Row(
-      children: List.generate(
-          n,
-          (index) => (index % 2 == 0)
-              ? Container(
-                  height: 2,
-                  width: width / n,
-                  color: Color(0xFFE4E4E4),
-                )
-              : SizedBox(
-                  width: width / n,
-                )),
-    );
-  }
+  int n = width ~/ 5;
+  return Row(
+    children: List.generate(
+        n,
+        (index) => (index % 2 == 0)
+            ? Container(
+                height: 2,
+                width: width / n,
+                color: Color(0xFFE4E4E4),
+              )
+            : SizedBox(
+                width: width / n,
+              )),
+  );
+}

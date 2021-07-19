@@ -9,6 +9,7 @@ class WalletPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: () async {
+        // ignore: deprecated_member_use
         context.bloc<PageBloc>().add(pageEvent);
 
         return;
@@ -35,6 +36,7 @@ class WalletPage extends StatelessWidget {
                           padding: EdgeInsets.only(top: 20),
                           child: GestureDetector(
                             onTap: () {
+                              // ignore: deprecated_member_use
                               context.bloc<PageBloc>().add(pageEvent);
                             },
                             child: Icon(Icons.arrow_back, color: Colors.black),
@@ -259,6 +261,7 @@ class WalletPage extends StatelessWidget {
                 width: 250,
                 height: 46,
                 margin: EdgeInsets.only(bottom: 30),
+                // ignore: deprecated_member_use
                 child: RaisedButton(
                     elevation: 0,
                     shape: RoundedRectangleBorder(
@@ -270,6 +273,7 @@ class WalletPage extends StatelessWidget {
                     ),
                     onPressed: () {
                       context
+                          // ignore: deprecated_member_use
                           .bloc<PageBloc>()
                           .add(GoToTopUpPage(GoToWalletPage(pageEvent)));
                     }),

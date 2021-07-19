@@ -15,6 +15,7 @@ class _TopUpPageState extends State<TopUpPage> {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: deprecated_member_use
     context.bloc<ThemeBloc>().add(
         ChangeTheme(ThemeData().copyWith(primaryColor: Color(0xFFE4E4E4))));
 
@@ -23,6 +24,7 @@ class _TopUpPageState extends State<TopUpPage> {
 
     return WillPopScope(
       onWillPop: () async {
+        // ignore: deprecated_member_use
         context.bloc<PageBloc>().add(widget.pageEvent);
 
         return;
@@ -38,6 +40,7 @@ class _TopUpPageState extends State<TopUpPage> {
                   margin: EdgeInsets.only(top: 20, left: defaultMargin),
                   child: GestureDetector(
                       onTap: () {
+                        // ignore: deprecated_member_use
                         context.bloc<PageBloc>().add(widget.pageEvent);
                       },
                       child: Icon(Icons.arrow_back, color: Colors.black)),
@@ -145,6 +148,7 @@ class _TopUpPageState extends State<TopUpPage> {
                         width: 250,
                         height: 46,
                         child: BlocBuilder<UserBloc, UserState>(
+                          // ignore: deprecated_member_use
                           builder: (_, userState) => RaisedButton(
                               elevation: 0,
                               shape: RoundedRectangleBorder(
@@ -161,6 +165,7 @@ class _TopUpPageState extends State<TopUpPage> {
                               color: Color(0xFF3E9D9D),
                               onPressed: (selectedAmount > 0)
                                   ? () {
+                                      // ignore: deprecated_member_use
                                       context.bloc<PageBloc>().add(GoToSuccessPage(
                                           null,
                                           FlutixTransaction(

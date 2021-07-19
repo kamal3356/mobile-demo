@@ -10,6 +10,7 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: () {
+        // ignore: deprecated_member_use
         context.bloc<PageBloc>().add(GoToMainPage());
 
         return;
@@ -94,6 +95,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       BlocBuilder<UserBloc, UserState>(
                         builder: (_, userState) => GestureDetector(
                           onTap: () {
+                            // ignore: deprecated_member_use
                             context.bloc<PageBloc>().add(GoToEditProfilePage(
                                 (userState as UserLoaded).user));
                           },
@@ -124,6 +126,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       GestureDetector(
                         onTap: () {
                           context
+                              // ignore: deprecated_member_use
                               .bloc<PageBloc>()
                               .add(GoToWalletPage(GoToProfilePage()));
                         },
@@ -215,6 +218,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       GestureDetector(
                         onTap: () async {
                           await AuthServices.signOut();
+                          // ignore: deprecated_member_use
                           context.bloc<UserBloc>().add(SignOut());
                         },
                         child: Row(
@@ -261,6 +265,7 @@ class _ProfilePageState extends State<ProfilePage> {
               margin: EdgeInsets.only(top: 20, left: defaultMargin),
               child: GestureDetector(
                 onTap: () {
+                  // ignore: deprecated_member_use
                   context.bloc<PageBloc>().add(GoToMainPage());
                 },
                 child: Icon(

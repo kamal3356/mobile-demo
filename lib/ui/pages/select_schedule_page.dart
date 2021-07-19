@@ -29,6 +29,7 @@ class _SelectSchedulePageState extends State<SelectSchedulePage> {
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: () async {
+        // ignore: deprecated_member_use
         context.bloc<PageBloc>().add(GoToMovieDetailPage(widget.movieDetail));
 
         return;
@@ -54,6 +55,7 @@ class _SelectSchedulePageState extends State<SelectSchedulePage> {
                       child: GestureDetector(
                         onTap: () {
                           context
+                              // ignore: deprecated_member_use
                               .bloc<PageBloc>()
                               .add(GoToMovieDetailPage(widget.movieDetail));
                         },
@@ -116,6 +118,7 @@ class _SelectSchedulePageState extends State<SelectSchedulePage> {
                           ),
                           onPressed: () {
                             if (isValid) {
+                              // ignore: deprecated_member_use
                               context.bloc<PageBloc>().add(GoToSelectSeatPage(
                                   Ticket(
                                       widget.movieDetail,

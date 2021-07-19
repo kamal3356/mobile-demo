@@ -34,6 +34,7 @@ class SplashPage extends StatelessWidget {
                 width: 250,
                 height: 46,
                 margin: EdgeInsets.only(top: 70, bottom: 19),
+                // ignore: deprecated_member_use
                 child: RaisedButton(
                     child: Text(
                       "Get Started",
@@ -42,6 +43,7 @@ class SplashPage extends StatelessWidget {
                     color: mainColor,
                     onPressed: () {
                       context
+                          // ignore: deprecated_member_use
                           .bloc<PageBloc>()
                           .add(GoToRegistrationPage(RegistrationData()));
                     }),
@@ -55,6 +57,7 @@ class SplashPage extends StatelessWidget {
                   ),
                   GestureDetector(
                     onTap: () {
+                      // ignore: deprecated_member_use
                       context.bloc<PageBloc>().add(GoToLoginPage());
                     },
                     child: Text(

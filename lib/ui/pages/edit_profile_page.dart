@@ -26,11 +26,13 @@ class _EditProfilePageState extends State<EditProfilePage> {
   @override
   Widget build(BuildContext context) {
     context
+        // ignore: deprecated_member_use
         .bloc<ThemeBloc>()
         .add(ChangeTheme(ThemeData().copyWith(primaryColor: accentColor2)));
 
     return WillPopScope(
       onWillPop: () {
+        // ignore: deprecated_member_use
         context.bloc<PageBloc>().add(GoToProfilePage());
 
         return;
@@ -166,6 +168,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
                       SizedBox(
                         width: 250,
                         height: 45,
+                        // ignore: deprecated_member_use
                         child: RaisedButton(
                             elevation: 0,
                             shape: RoundedRectangleBorder(
@@ -230,6 +233,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
                           : SizedBox(
                               width: 250,
                               height: 45,
+                              // ignore: deprecated_member_use
                               child: RaisedButton(
                                   elevation: 0,
                                   shape: RoundedRectangleBorder(
@@ -255,12 +259,14 @@ class _EditProfilePageState extends State<EditProfilePage> {
                                                 profileImageFile);
                                           }
 
+                                          // ignore: deprecated_member_use
                                           context.bloc<UserBloc>().add(
                                               UpdateData(
                                                   name: nameController.text,
                                                   profileImage: profilePath));
 
                                           context
+                                              // ignore: deprecated_member_use
                                               .bloc<PageBloc>()
                                               .add(GoToProfilePage());
                                         }
@@ -276,6 +282,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
               margin: EdgeInsets.only(top: 20, left: defaultMargin),
               child: GestureDetector(
                 onTap: () {
+                  // ignore: deprecated_member_use
                   context.bloc<PageBloc>().add(GoToProfilePage());
                 },
                 child: Icon(

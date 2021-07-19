@@ -51,6 +51,7 @@ class SuccessPage extends StatelessWidget {
                           height: 45,
                           width: 250,
                           margin: EdgeInsets.only(top: 70, bottom: 20),
+                          // ignore: deprecated_member_use
                           child: RaisedButton(
                               elevation: 0,
                               color: mainColor,
@@ -63,10 +64,12 @@ class SuccessPage extends StatelessWidget {
                               onPressed: () {
                                 if (ticket == null) {
                                   context
+                                      // ignore: deprecated_member_use
                                       .bloc<PageBloc>()
                                       .add(GoToWalletPage(GoToMainPage()));
                                 } else {
                                   context
+                                      // ignore: deprecated_member_use
                                       .bloc<PageBloc>()
                                       .add(GoToMainPage(bottomNavBarIndex: 1));
                                 }
@@ -82,6 +85,7 @@ class SuccessPage extends StatelessWidget {
                             ),
                             GestureDetector(
                               onTap: () {
+                                // ignore: deprecated_member_use
                                 context.bloc<PageBloc>().add(GoToMainPage());
                               },
                               child: Text(
@@ -103,13 +107,16 @@ class SuccessPage extends StatelessWidget {
   }
 
   Future<void> processingTicketOrder(BuildContext context) async {
+    // ignore: deprecated_member_use
     context.bloc<UserBloc>().add(Purchase(ticket.totalPrice));
+    // ignore: deprecated_member_use
     context.bloc<TicketBloc>().add(BuyTicket(ticket, transaction.userID));
 
     await FlutixTransactionServices.saveTransaction(transaction);
   }
 
   Future<void> processingTopUp(BuildContext context) async {
+    // ignore: deprecated_member_use
     context.bloc<UserBloc>().add(TopUp(transaction.amount));
 
     await FlutixTransactionServices.saveTransaction(transaction);

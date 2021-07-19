@@ -16,6 +16,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
 
     return WillPopScope(
         onWillPop: () async {
+          // ignore: deprecated_member_use
           context.bloc<PageBloc>().add(GoToSelectSeatPage(widget.ticket));
 
           return;
@@ -44,6 +45,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                             child: GestureDetector(
                               onTap: () {
                                 context
+                                    // ignore: deprecated_member_use
                                     .bloc<PageBloc>()
                                     .add(GoToSelectSeatPage(widget.ticket));
                               },
@@ -356,6 +358,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                                 width: 250,
                                 height: 46,
                                 margin: EdgeInsets.only(top: 36, bottom: 50),
+                                // ignore: deprecated_member_use
                                 child: RaisedButton(
                                     elevation: 0,
                                     color: user.balance >= total
@@ -384,9 +387,12 @@ class _CheckoutPageState extends State<CheckoutPage> {
                                                 picture: widget.ticket
                                                     .movieDetail.posterPath);
 
+                                        // ignore: deprecated_member_use
                                         context.bloc<PageBloc>().add(
                                             GoToSuccessPage(
-                                                widget.ticket.copyWith(totalPrice: total), transaction));
+                                                widget.ticket.copyWith(
+                                                    totalPrice: total),
+                                                transaction));
                                       } else {
                                         // # Uang tidak cukup
                                       }

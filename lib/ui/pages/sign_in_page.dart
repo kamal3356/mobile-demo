@@ -16,11 +16,13 @@ class _SignInPageState extends State<SignInPage> {
   @override
   Widget build(BuildContext context) {
     context
+        // ignore: deprecated_member_use
         .bloc<ThemeBloc>()
         .add(ChangeTheme(ThemeData().copyWith(primaryColor: accentColor2)));
 
     return WillPopScope(
       onWillPop: () {
+        // ignore: deprecated_member_use
         context.bloc<PageBloc>().add(GoToSplashPage());
 
         return;
