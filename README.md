@@ -17,7 +17,7 @@ Kelas 2E
 8.
 9. 361955401131 - Yusuf Farhan Nurrahman
 12. 361955401135 - Alifia Helda Cahyani
-
+13. 
 
 Kelas 2F
 1.361955401155 - Rohmad Kurniadi
@@ -30,3 +30,7 @@ Kelas 2F
 10.361955401152 - Satria Teguh Perkasa
 11. 361955401150 - Yasika Ekki Permana
 12. 361955401153 - hilmi bakhtiar
+13. 361955401170 - Nataryn Silkynta Wiridilla Malawangi
+14. 361955401151 - Anisya Mega Rifdiana
+15. 361955401165 - Erica Septiyana
+16. 361955401161 - Via Antika
