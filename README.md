@@ -21,3 +21,5 @@ Kelas 2F
 3. 361955401160 - Dendy Krisna Ananda
 <br>
 4. 361955401172 - Kevin Rizwan
+<br>
+6. 361955401158 - Wahyu Ryan Refany
