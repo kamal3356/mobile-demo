@@ -16,6 +16,7 @@ Kelas 2E
 7.
 8.
 9. 361955401131 - Yusuf Farhan Nurrahman
+12. 361955401135 - Alifia Helda Cahyani
 
 
 Kelas 2F
