@@ -23,5 +23,5 @@ Kelas 2F
 4. 361955401172 - Kevin Rizwan
 <br>
 6. 361955401158 - Wahyu Ryan Refany
-7. <br>
-6. 361955401157 - Mukhamad Ivan Alvian
+<br>
+7. 361955401157 - Mukhamad Ivan Alvian
