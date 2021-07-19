@@ -6,6 +6,5 @@ A new Flutter project.
 
 This project is a starting point for a Flutter application.
 
+Kelas 2E 1.NIM - Nama 2.
 
-Kelas 2E
-6.361955401127 - Azizi Novan M.
