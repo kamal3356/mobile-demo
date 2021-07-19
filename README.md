@@ -7,7 +7,7 @@ Kelas 2D
 2. 
 
 Kelas 2E
-1. 361955401137 - Bharamiyati Athalas Bharka
+1. 
 2.
 3.
 4.
@@ -17,6 +17,7 @@ Kelas 2E
 8.
 9. 361955401131 - Yusuf Farhan Nurrahman
 12. 361955401135 – Alifia helda Cahyani
+14. 361955401137 - Bharamiyati Athalas Bharka
 
 
 Kelas 2F
