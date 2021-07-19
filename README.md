@@ -13,9 +13,6 @@ Kelas 2E
 2.
 
 Kelas 2F
-<br>
 1.361955401155 - Rohmad Kurniadi
-<br>
 2.361955401154 - Arief Ramadhan
-<br>
-3. 361955401160 - Dendy Krisna Ananda
+3.361955401157 - Mukhamad Ivan Alvian
