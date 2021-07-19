@@ -27,6 +27,5 @@ Kelas 2F
 7.361955401157 - Mukhamad Ivan Alvian
 8.361955401177 - Bagus Ika Putranto
 10.361955401152 - Satria Teguh Perkasa
-11.361955401157 - Mukhamad Ivan Alvian
-12. 361955401150 - Yasika Ekki Permana
-13. 361955401153 - hilmi bakhtiar
+11. 361955401150 - Yasika Ekki Permana
+12. 361955401153 - hilmi bakhtiar
