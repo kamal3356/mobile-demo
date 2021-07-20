@@ -3,55 +3,35 @@ Flutter project.
 ## Getting Started
 
 Kelas 2D
-1.361955401091 - Hadi Rizaldi Rahmanto
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
-10.
-11.
-12.
-13.
-14.
-15.
-16.
-17.
-18.
-19.
-20.
-21. 361955401112 - Muhammad Arif Purnama Aji
-
+1.361955401091 - Hadi Rizaldi Rahmanto 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. 18. 19. 20. 21. 361955401112 - Muhammad Arif Purnama Aji
 
 Kelas 2E
-1. 361955401137 - Bharamiyati Athalas Bharka
+
+1.
 2.
 3.
 4. 361955401125 - Dwi Uswatun Khasanah
 5.
 6. 361955401127 - Azizi Novan Maulana
-7.
+7. 361955401128 - Refki Berga Fortuna
 8.
 9. 361955401131 - Yusuf Farhan Nurrahman
-12. 361955401135 – Alifia helda Cahyani
-14. 361955401137 - Bharamiyati Athalas Bharka
-15. 
-16. 361955401138 - Femas Febriano
+10. 361955401135 – Alifia helda Cahyani
+11. 361955401137 - Bharamiyati Athalas Bharka
+12.
+13. 361955401138 - Femas Febriano
+14.
+15.
+16.
 17.
 18.
-19.
+19. 361955401146 - Mimin Lestari
 20.
-21.
-22. 361955401146 - Mimin Lestari
-23.
-24. 361955401148 - In Ainatul Muniroh
-25.
-
+21. 361955401148 - In Ainatul Muniroh
+22.
 
 Kelas 2F
+
 1. 361955401155 - Rohmad Kurniadi
 2. 361955401154 - Arief Ramadhan
 3. 361955401160 - Dendy Krisna Ananda
@@ -66,6 +46,6 @@ Kelas 2F
 12. 361955401151 - Anisya Mega Rifdiana
 13. 361955401161 - Via Antika
 14. 361955401165 - Erica Septiyana
-15. 361955401156 - Niko Andrianto 
+15. 361955401156 - Niko Andrianto
 16. 361955401173 - Aldy Chezar Mahendra
 17. 361955401169 - Elan Tri Wahyudi
