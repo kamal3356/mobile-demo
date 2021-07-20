@@ -10,7 +10,7 @@ Kelas 2E
 1. 361955401137 - Bharamiyati Athalas Bharka
 2.
 3.
-4.
+4. 361955401125 - Dwi Uswatun Khasanah
 5.
 6. 361955401127 - Azizi Novan Maulana
 7.
