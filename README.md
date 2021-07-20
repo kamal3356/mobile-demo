@@ -17,8 +17,8 @@ Kelas 2E
 8.
 9. 361955401131 - Yusuf Farhan Nurrahman
 10. 361955401135 – Alifia helda Cahyani
-11. 361955401137 - Bharamiyati Athalas Bharka
-12.
+11. 361955401136 - Firman Fauzy
+12. 361955401137 - Bharamiyati Athalas Bharka
 13. 361955401138 - Femas Febriano
 14.
 15.
