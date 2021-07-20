@@ -32,20 +32,20 @@ Kelas 2E
 
 
 Kelas 2F
-1.361955401155 - Rohmad Kurniadi
-2.361955401154 - Arief Ramadhan
-3.361955401160 - Dendy Krisna Ananda
-4.361955401172 - Kevin Rizwan
-6.361955401158 - Wahyu Ryan Refany
-7.361955401157 - Mukhamad Ivan Alvian
-8.361955401177 - Bagus Ika Putranto
-10.361955401152 - Satria Teguh Perkasa
-11. 361955401150 - Yasika Ekki Permana
-12. 361955401153 - hilmi bakhtiar
-13. 361955401170 - Nataryn Silkynta Wiridilla Malawangi
-14. 361955401151 - Anisya Mega Rifdiana
-15. 361955401161 - Via Antika
-16. 361955401165 - Erica Septiyana
-17. 361955401156 - Niko Andrianto 
-18. 361955401173 - Aldy Chezar Mahendra
-19. 361955401169 - Elan Tri Wahyudi
+1. 361955401155 - Rohmad Kurniadi
+2. 361955401154 - Arief Ramadhan
+3. 361955401160 - Dendy Krisna Ananda
+4. 361955401172 - Kevin Rizwan
+5. 361955401158 - Wahyu Ryan Refany
+6. 361955401157 - Mukhamad Ivan Alvian
+7. 361955401177 - Bagus Ika Putranto
+8. 361955401152 - Satria Teguh Perkasa
+9. 361955401150 - Yasika Ekki Permana
+10. 361955401153 - hilmi bakhtiar
+11. 361955401170 - Nataryn Silkynta Wiridilla Malawangi
+12. 361955401151 - Anisya Mega Rifdiana
+13. 361955401161 - Via Antika
+14. 361955401165 - Erica Septiyana
+15. 361955401156 - Niko Andrianto 
+16. 361955401173 - Aldy Chezar Mahendra
+17. 361955401169 - Elan Tri Wahyudi
