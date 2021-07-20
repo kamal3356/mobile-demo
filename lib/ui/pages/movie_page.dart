@@ -19,12 +19,7 @@ class MoviePage extends StatelessWidget {
                 uploadImage(imageFileToUpload).then((downloadURL) {
                   imageFileToUpload = null;
                   context
-<<<<<<< HEAD
                       .read<UserBloc>()
-=======
-                      // ignore: deprecated_member_use
-                      .bloc<UserBloc>()
->>>>>>> pak_alif/master
                       .add(UpdateData(profileImage: downloadURL));
                 });
               }
@@ -33,12 +28,7 @@ class MoviePage extends StatelessWidget {
                 children: <Widget>[
                   GestureDetector(
                     onTap: () {
-<<<<<<< HEAD
                       context.read<PageBloc>().add(GoToProfilePage());
-=======
-                      // ignore: deprecated_member_use
-                      context.bloc<PageBloc>().add(GoToProfilePage());
->>>>>>> pak_alif/master
                     },
                     child: Container(
                       padding: EdgeInsets.all(5),
@@ -88,12 +78,7 @@ class MoviePage extends StatelessWidget {
                       GestureDetector(
                         onTap: () {
                           context
-<<<<<<< HEAD
                               .read<PageBloc>()
-=======
-                              // ignore: deprecated_member_use
-                              .bloc<PageBloc>()
->>>>>>> pak_alif/master
                               .add(GoToWalletPage(GoToMainPage()));
                         },
                         child: Text(
@@ -148,12 +133,7 @@ class MoviePage extends StatelessWidget {
                             movies[index],
                             onTap: () {
                               context
-<<<<<<< HEAD
                                   .read<PageBloc>()
-=======
-                                  // ignore: deprecated_member_use
-                                  .bloc<PageBloc>()
->>>>>>> pak_alif/master
                                   .add(GoToMovieDetailPage(movies[index]));
                             },
                           ),

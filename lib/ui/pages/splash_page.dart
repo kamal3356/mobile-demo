@@ -43,12 +43,7 @@ class SplashPage extends StatelessWidget {
                     color: mainColor,
                     onPressed: () {
                       context
-<<<<<<< HEAD
                           .read<PageBloc>()
-=======
-                          // ignore: deprecated_member_use
-                          .bloc<PageBloc>()
->>>>>>> pak_alif/master
                           .add(GoToRegistrationPage(RegistrationData()));
                     }),
               ),
@@ -61,12 +56,7 @@ class SplashPage extends StatelessWidget {
                   ),
                   GestureDetector(
                     onTap: () {
-<<<<<<< HEAD
                       context.read<PageBloc>().add(GoToLoginPage());
-=======
-                      // ignore: deprecated_member_use
-                      context.bloc<PageBloc>().add(GoToLoginPage());
->>>>>>> pak_alif/master
                     },
                     child: Text(
                       "Sign In",

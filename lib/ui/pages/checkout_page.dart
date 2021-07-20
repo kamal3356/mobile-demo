@@ -16,12 +16,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
 
     return WillPopScope(
         onWillPop: () async {
-<<<<<<< HEAD
           context.read<PageBloc>().add(GoToSelectSeatPage(widget.ticket));
-=======
-          // ignore: deprecated_member_use
-          context.bloc<PageBloc>().add(GoToSelectSeatPage(widget.ticket));
->>>>>>> pak_alif/master
 
           return;
         },
@@ -49,12 +44,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                             child: GestureDetector(
                               onTap: () {
                                 context
-<<<<<<< HEAD
                                     .read<PageBloc>()
-=======
-                                    // ignore: deprecated_member_use
-                                    .bloc<PageBloc>()
->>>>>>> pak_alif/master
                                     .add(GoToSelectSeatPage(widget.ticket));
                               },
                               child: Icon(
@@ -366,7 +356,6 @@ class _CheckoutPageState extends State<CheckoutPage> {
                                 width: 250,
                                 height: 46,
                                 margin: EdgeInsets.only(top: 36, bottom: 50),
-<<<<<<< HEAD
                                 child: ElevatedButton(
                                     style: ButtonStyle(
                                       elevation:
@@ -384,16 +373,6 @@ class _CheckoutPageState extends State<CheckoutPage> {
                                               borderRadius:
                                                   BorderRadius.circular(8))),
                                     ),
-=======
-                                // ignore: deprecated_member_use
-                                child: RaisedButton(
-                                    elevation: 0,
-                                    color: user.balance >= total
-                                        ? Color(0xFF3E9D9D)
-                                        : mainColor,
-                                    shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(8)),
->>>>>>> pak_alif/master
                                     child: Text(
                                       user.balance >= total
                                           ? "Checkout Now"
@@ -415,12 +394,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                                                 picture: widget.ticket
                                                     .movieDetail.posterPath);
 
-<<<<<<< HEAD
                                         context.read<PageBloc>().add(
-=======
-                                        // ignore: deprecated_member_use
-                                        context.bloc<PageBloc>().add(
->>>>>>> pak_alif/master
                                             GoToSuccessPage(
                                                 widget.ticket.copyWith(
                                                     totalPrice: total),

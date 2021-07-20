@@ -64,21 +64,11 @@ class SuccessPage extends StatelessWidget {
                               onPressed: () {
                                 if (ticket == null) {
                                   context
-<<<<<<< HEAD
                                       .read<PageBloc>()
                                       .add(GoToWalletPage(GoToMainPage()));
                                 } else {
                                   context
                                       .read<PageBloc>()
-=======
-                                      // ignore: deprecated_member_use
-                                      .bloc<PageBloc>()
-                                      .add(GoToWalletPage(GoToMainPage()));
-                                } else {
-                                  context
-                                      // ignore: deprecated_member_use
-                                      .bloc<PageBloc>()
->>>>>>> pak_alif/master
                                       .add(GoToMainPage(bottomNavBarIndex: 1));
                                 }
                               }),
@@ -93,12 +83,7 @@ class SuccessPage extends StatelessWidget {
                             ),
                             GestureDetector(
                               onTap: () {
-<<<<<<< HEAD
                                 context.read<PageBloc>().add(GoToMainPage());
-=======
-                                // ignore: deprecated_member_use
-                                context.bloc<PageBloc>().add(GoToMainPage());
->>>>>>> pak_alif/master
                               },
                               child: Text(
                                 "Back to Home",
@@ -119,26 +104,14 @@ class SuccessPage extends StatelessWidget {
   }
 
   Future<void> processingTicketOrder(BuildContext context) async {
-<<<<<<< HEAD
     context.read<UserBloc>().add(Purchase(ticket.totalPrice));
     context.read<TicketBloc>().add(BuyTicket(ticket, transaction.userID));
-=======
-    // ignore: deprecated_member_use
-    context.bloc<UserBloc>().add(Purchase(ticket.totalPrice));
-    // ignore: deprecated_member_use
-    context.bloc<TicketBloc>().add(BuyTicket(ticket, transaction.userID));
->>>>>>> pak_alif/master
 
     await FlutixTransactionServices.saveTransaction(transaction);
   }
 
   Future<void> processingTopUp(BuildContext context) async {
-<<<<<<< HEAD
     context.read<UserBloc>().add(TopUp(transaction.amount));
-=======
-    // ignore: deprecated_member_use
-    context.bloc<UserBloc>().add(TopUp(transaction.amount));
->>>>>>> pak_alif/master
 
     await FlutixTransactionServices.saveTransaction(transaction);
   }

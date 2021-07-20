@@ -18,12 +18,7 @@ class _AccountConfirmationPageState extends State<AccountConfirmationPage> {
     return WillPopScope(
       onWillPop: () async {
         context
-<<<<<<< HEAD
             .read<PageBloc>()
-=======
-            // ignore: deprecated_member_use
-            .bloc<PageBloc>()
->>>>>>> pak_alif/master
             .add(GoToPreferencePage(widget.registrationData));
         return;
       },
@@ -44,12 +39,7 @@ class _AccountConfirmationPageState extends State<AccountConfirmationPage> {
                           alignment: Alignment.centerLeft,
                           child: GestureDetector(
                             onTap: () {
-<<<<<<< HEAD
                               context.read<PageBloc>().add(GoToSplashPage());
-=======
-                              // ignore: deprecated_member_use
-                              context.bloc<PageBloc>().add(GoToSplashPage());
->>>>>>> pak_alif/master
                             },
                             child: Icon(Icons.arrow_back, color: Colors.black),
                           ),
@@ -99,7 +89,6 @@ class _AccountConfirmationPageState extends State<AccountConfirmationPage> {
                       : SizedBox(
                           width: 250,
                           height: 45,
-<<<<<<< HEAD
                           // beda
                           child: ElevatedButton(
                             style: ButtonStyle(
@@ -118,21 +107,6 @@ class _AccountConfirmationPageState extends State<AccountConfirmationPage> {
                               setState(() {
                                 isSigningUp = true;
                               });
-=======
-                          // ignore: deprecated_member_use
-                          child: RaisedButton(
-                              color: Color(0xFF3E9D9D),
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(8)),
-                              child: Text(
-                                "Create My Account",
-                                style: whiteTextFont.copyWith(fontSize: 16),
-                              ),
-                              onPressed: () async {
-                                setState(() {
-                                  isSigningUp = true;
-                                });
->>>>>>> pak_alif/master
 
                               imageFileToUpload =
                                   widget.registrationData.profileImage;

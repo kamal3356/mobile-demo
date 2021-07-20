@@ -10,12 +10,7 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: () {
-<<<<<<< HEAD
         context.read<PageBloc>().add(GoToMainPage());
-=======
-        // ignore: deprecated_member_use
-        context.bloc<PageBloc>().add(GoToMainPage());
->>>>>>> pak_alif/master
 
         return;
       },
@@ -99,12 +94,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       BlocBuilder<UserBloc, UserState>(
                         builder: (_, userState) => GestureDetector(
                           onTap: () {
-<<<<<<< HEAD
                             context.read<PageBloc>().add(GoToEditProfilePage(
-=======
-                            // ignore: deprecated_member_use
-                            context.bloc<PageBloc>().add(GoToEditProfilePage(
->>>>>>> pak_alif/master
                                 (userState as UserLoaded).user));
                           },
                           child: Row(
@@ -134,12 +124,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       GestureDetector(
                         onTap: () {
                           context
-<<<<<<< HEAD
                               .read<PageBloc>()
-=======
-                              // ignore: deprecated_member_use
-                              .bloc<PageBloc>()
->>>>>>> pak_alif/master
                               .add(GoToWalletPage(GoToProfilePage()));
                         },
                         child: Row(
@@ -230,12 +215,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       GestureDetector(
                         onTap: () async {
                           await AuthServices.signOut();
-<<<<<<< HEAD
                           context.read<UserBloc>().add(SignOut());
-=======
-                          // ignore: deprecated_member_use
-                          context.bloc<UserBloc>().add(SignOut());
->>>>>>> pak_alif/master
                         },
                         child: Row(
                           children: <Widget>[
@@ -281,12 +261,7 @@ class _ProfilePageState extends State<ProfilePage> {
               margin: EdgeInsets.only(top: 20, left: defaultMargin),
               child: GestureDetector(
                 onTap: () {
-<<<<<<< HEAD
                   context.read<PageBloc>().add(GoToMainPage());
-=======
-                  // ignore: deprecated_member_use
-                  context.bloc<PageBloc>().add(GoToMainPage());
->>>>>>> pak_alif/master
                 },
                 child: Icon(
                   Icons.arrow_back,

@@ -12,12 +12,7 @@ class MovieDetailPage extends StatelessWidget {
 
     return WillPopScope(
       onWillPop: () async {
-<<<<<<< HEAD
         context.read<PageBloc>().add(GoToMainPage());
-=======
-        // ignore: deprecated_member_use
-        context.bloc<PageBloc>().add(GoToMainPage());
->>>>>>> pak_alif/master
 
         return;
       },
@@ -81,12 +76,7 @@ class MovieDetailPage extends StatelessWidget {
                                   color: Colors.black.withOpacity(0.04)),
                               child: GestureDetector(
                                 onTap: () {
-<<<<<<< HEAD
                                   context.read<PageBloc>().add(GoToMainPage());
-=======
-                                  // ignore: deprecated_member_use
-                                  context.bloc<PageBloc>().add(GoToMainPage());
->>>>>>> pak_alif/master
                                 },
                                 child: Icon(
                                   Icons.arrow_back,
@@ -205,12 +195,7 @@ class MovieDetailPage extends StatelessWidget {
                             ),
                             onPressed: () {
                               context
-<<<<<<< HEAD
                                   .read<PageBloc>()
-=======
-                                  // ignore: deprecated_member_use
-                                  .bloc<PageBloc>()
->>>>>>> pak_alif/master
                                   .add(GoToSelectSchedulePage(movieDetail));
                             }),
                         SizedBox(height: defaultMargin)

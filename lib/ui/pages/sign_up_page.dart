@@ -26,22 +26,12 @@ class _SignUpPageState extends State<SignUpPage> {
   @override
   Widget build(BuildContext context) {
     context
-<<<<<<< HEAD
         .read<ThemeBloc>()
-=======
-        // ignore: deprecated_member_use
-        .bloc<ThemeBloc>()
->>>>>>> pak_alif/master
         .add(ChangeTheme(ThemeData().copyWith(primaryColor: accentColor1)));
 
     return WillPopScope(
       onWillPop: () async {
-<<<<<<< HEAD
         context.read<PageBloc>().add(GoToSplashPage());
-=======
-        // ignore: deprecated_member_use
-        context.bloc<PageBloc>().add(GoToSplashPage());
->>>>>>> pak_alif/master
 
         return;
       },
@@ -62,12 +52,7 @@ class _SignUpPageState extends State<SignUpPage> {
                           alignment: Alignment.centerLeft,
                           child: GestureDetector(
                             onTap: () {
-<<<<<<< HEAD
                               context.read<PageBloc>().add(GoToSplashPage());
-=======
-                              // ignore: deprecated_member_use
-                              context.bloc<PageBloc>().add(GoToSplashPage());
->>>>>>> pak_alif/master
                             },
                             child: Icon(Icons.arrow_back, color: Colors.black),
                           ),
@@ -226,12 +211,7 @@ class _SignUpPageState extends State<SignUpPage> {
                               passwordController.text;
 
                           context
-<<<<<<< HEAD
                               .read<PageBloc>()
-=======
-                              // ignore: deprecated_member_use
-                              .bloc<PageBloc>()
->>>>>>> pak_alif/master
                               .add(GoToPreferencePage(widget.registrationData));
                         }
                       })
