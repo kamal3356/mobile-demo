@@ -51,3 +51,4 @@ Kelas 2F
 16. 361955401173 - Aldy Chezar Mahendra
 17. 361955401169 - Elan Tri Wahyudi
 18. 361955401166 - Muhamad Nusayif Jassim
+19. 361955401159 - Diana Fitri Nuryanti
