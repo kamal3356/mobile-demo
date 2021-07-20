@@ -29,6 +29,7 @@ Kelas 2E
 20.
 21. 361955401148 - In Ainatul Muniroh
 22.
+23.
 
 Kelas 2F
 
