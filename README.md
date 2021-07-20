@@ -18,6 +18,17 @@ Kelas 2E
 9. 361955401131 - Yusuf Farhan Nurrahman
 12. 361955401135 – Alifia helda Cahyani
 14. 361955401137 - Bharamiyati Athalas Bharka
+15.
+16.
+17.
+18.
+19.
+20.
+21.
+22.
+23.
+24. In Ainatul Muniroh - 361955401148
+25.
 
 
 Kelas 2F
