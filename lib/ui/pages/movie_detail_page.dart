@@ -12,7 +12,7 @@ class MovieDetailPage extends StatelessWidget {
 
     return WillPopScope(
       onWillPop: () async {
-        context.bloc<PageBloc>().add(GoToMainPage());
+        context.read<PageBloc>().add(GoToMainPage());
 
         return;
       },
@@ -76,7 +76,7 @@ class MovieDetailPage extends StatelessWidget {
                                   color: Colors.black.withOpacity(0.04)),
                               child: GestureDetector(
                                 onTap: () {
-                                  context.bloc<PageBloc>().add(GoToMainPage());
+                                  context.read<PageBloc>().add(GoToMainPage());
                                 },
                                 child: Icon(
                                   Icons.arrow_back,
@@ -184,6 +184,7 @@ class MovieDetailPage extends StatelessWidget {
                           ),
                         ),
                         // note: BUTTON
+                        // ignore: deprecated_member_use
                         RaisedButton(
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(8)),
@@ -194,7 +195,7 @@ class MovieDetailPage extends StatelessWidget {
                             ),
                             onPressed: () {
                               context
-                                  .bloc<PageBloc>()
+                                  .read<PageBloc>()
                                   .add(GoToSelectSchedulePage(movieDetail));
                             }),
                         SizedBox(height: defaultMargin)

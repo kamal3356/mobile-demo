@@ -26,12 +26,12 @@ class _EditProfilePageState extends State<EditProfilePage> {
   @override
   Widget build(BuildContext context) {
     context
-        .bloc<ThemeBloc>()
+        .read<ThemeBloc>()
         .add(ChangeTheme(ThemeData().copyWith(primaryColor: accentColor2)));
 
     return WillPopScope(
       onWillPop: () {
-        context.bloc<PageBloc>().add(GoToProfilePage());
+        context.read<PageBloc>().add(GoToProfilePage());
 
         return;
       },
@@ -166,6 +166,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
                       SizedBox(
                         width: 250,
                         height: 45,
+                        // ignore: deprecated_member_use
                         child: RaisedButton(
                             elevation: 0,
                             shape: RoundedRectangleBorder(
@@ -230,6 +231,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
                           : SizedBox(
                               width: 250,
                               height: 45,
+                              // ignore: deprecated_member_use
                               child: RaisedButton(
                                   elevation: 0,
                                   shape: RoundedRectangleBorder(
@@ -255,13 +257,13 @@ class _EditProfilePageState extends State<EditProfilePage> {
                                                 profileImageFile);
                                           }
 
-                                          context.bloc<UserBloc>().add(
+                                          context.read<UserBloc>().add(
                                               UpdateData(
                                                   name: nameController.text,
                                                   profileImage: profilePath));
 
                                           context
-                                              .bloc<PageBloc>()
+                                              .read<PageBloc>()
                                               .add(GoToProfilePage());
                                         }
                                       : null),
@@ -276,7 +278,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
               margin: EdgeInsets.only(top: 20, left: defaultMargin),
               child: GestureDetector(
                 onTap: () {
-                  context.bloc<PageBloc>().add(GoToProfilePage());
+                  context.read<PageBloc>().add(GoToProfilePage());
                 },
                 child: Icon(
                   Icons.arrow_back,

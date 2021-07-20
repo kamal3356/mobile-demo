@@ -1,6 +1,6 @@
 part of 'shared.dart';
 
-String apiKey = "40f5f75e66d72e1a56839f1bb415319c";
+String apiKey = "bdb8d03b99aaa05f42f4237ca9eb9fd3";
 String imageBaseURL = "https://image.tmdb.org/t/p/";
 
 PageEvent prevPageEvent;

@@ -29,7 +29,7 @@ class _SelectSchedulePageState extends State<SelectSchedulePage> {
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: () async {
-        context.bloc<PageBloc>().add(GoToMovieDetailPage(widget.movieDetail));
+        context.read<PageBloc>().add(GoToMovieDetailPage(widget.movieDetail));
 
         return;
       },
@@ -54,7 +54,7 @@ class _SelectSchedulePageState extends State<SelectSchedulePage> {
                       child: GestureDetector(
                         onTap: () {
                           context
-                              .bloc<PageBloc>()
+                              .read<PageBloc>()
                               .add(GoToMovieDetailPage(widget.movieDetail));
                         },
                         child: Icon(
@@ -116,7 +116,7 @@ class _SelectSchedulePageState extends State<SelectSchedulePage> {
                           ),
                           onPressed: () {
                             if (isValid) {
-                              context.bloc<PageBloc>().add(GoToSelectSeatPage(
+                              context.read<PageBloc>().add(GoToSelectSeatPage(
                                   Ticket(
                                       widget.movieDetail,
                                       selectedTheater,

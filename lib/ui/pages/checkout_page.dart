@@ -16,7 +16,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
 
     return WillPopScope(
         onWillPop: () async {
-          context.bloc<PageBloc>().add(GoToSelectSeatPage(widget.ticket));
+          context.read<PageBloc>().add(GoToSelectSeatPage(widget.ticket));
 
           return;
         },
@@ -44,7 +44,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                             child: GestureDetector(
                               onTap: () {
                                 context
-                                    .bloc<PageBloc>()
+                                    .read<PageBloc>()
                                     .add(GoToSelectSeatPage(widget.ticket));
                               },
                               child: Icon(
@@ -356,13 +356,23 @@ class _CheckoutPageState extends State<CheckoutPage> {
                                 width: 250,
                                 height: 46,
                                 margin: EdgeInsets.only(top: 36, bottom: 50),
-                                child: RaisedButton(
-                                    elevation: 0,
-                                    color: user.balance >= total
-                                        ? Color(0xFF3E9D9D)
-                                        : mainColor,
-                                    shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(8)),
+                                child: ElevatedButton(
+                                    style: ButtonStyle(
+                                      elevation:
+                                          MaterialStateProperty.all<double>(
+                                              0.0),
+                                      backgroundColor:
+                                          MaterialStateProperty.all<Color>(
+                                        user.balance >= total
+                                            ? Color(0xFF3E9D9D)
+                                            : mainColor,
+                                      ),
+                                      shape: MaterialStateProperty.all<
+                                              OutlinedBorder>(
+                                          RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(8))),
+                                    ),
                                     child: Text(
                                       user.balance >= total
                                           ? "Checkout Now"
@@ -384,9 +394,11 @@ class _CheckoutPageState extends State<CheckoutPage> {
                                                 picture: widget.ticket
                                                     .movieDetail.posterPath);
 
-                                        context.bloc<PageBloc>().add(
+                                        context.read<PageBloc>().add(
                                             GoToSuccessPage(
-                                                widget.ticket.copyWith(totalPrice: total), transaction));
+                                                widget.ticket.copyWith(
+                                                    totalPrice: total),
+                                                transaction));
                                       } else {
                                         // # Uang tidak cukup
                                       }
