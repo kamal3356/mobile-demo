@@ -47,5 +47,5 @@ Kelas 2F
 15. 361955401161 - Via Antika
 16. 361955401165 - Erica Septiyana
 17. 361955401156 - Niko Andrianto 
-
+18. 361955401173 - Aldy Chezar Mahendra
 
