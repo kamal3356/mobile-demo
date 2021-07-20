@@ -27,7 +27,7 @@ Kelas 2E
 21.
 22.
 23.
-24. In Ainatul Muniroh - 361955401148
+24. 361955401148 - In Ainatul Muniroh
 25.
 
 
