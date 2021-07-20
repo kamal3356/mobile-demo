@@ -48,4 +48,4 @@ Kelas 2F
 16. 361955401165 - Erica Septiyana
 17. 361955401156 - Niko Andrianto 
 18. 361955401173 - Aldy Chezar Mahendra
-
+19. 361955401169 - Elan Tri Wahyudi
