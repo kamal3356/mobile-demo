@@ -25,7 +25,7 @@ Kelas 2E
 19.
 20.
 21.
-22.
+22. 361955401146 - Mimin Lestari
 23.
 24. 361955401148 - In Ainatul Muniroh
 25.
