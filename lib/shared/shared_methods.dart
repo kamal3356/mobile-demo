@@ -1,8 +1,7 @@
 part of 'shared.dart';
 
-Future<File> getImage() async {
-  // ignore: deprecated_member_use
-  var image = await ImagePicker.pickImage(source: ImageSource.gallery);
+getImage() async {
+  var image = await ImagePicker().getImage(source: ImageSource.gallery);
   return image;
 }
 

@@ -26,14 +26,12 @@ class _EditProfilePageState extends State<EditProfilePage> {
   @override
   Widget build(BuildContext context) {
     context
-        // ignore: deprecated_member_use
-        .bloc<ThemeBloc>()
+        .read<ThemeBloc>()
         .add(ChangeTheme(ThemeData().copyWith(primaryColor: accentColor2)));
 
     return WillPopScope(
       onWillPop: () {
-        // ignore: deprecated_member_use
-        context.bloc<PageBloc>().add(GoToProfilePage());
+        context.read<PageBloc>().add(GoToProfilePage());
 
         return;
       },
@@ -259,15 +257,13 @@ class _EditProfilePageState extends State<EditProfilePage> {
                                                 profileImageFile);
                                           }
 
-                                          // ignore: deprecated_member_use
-                                          context.bloc<UserBloc>().add(
+                                          context.read<UserBloc>().add(
                                               UpdateData(
                                                   name: nameController.text,
                                                   profileImage: profilePath));
 
                                           context
-                                              // ignore: deprecated_member_use
-                                              .bloc<PageBloc>()
+                                              .read<PageBloc>()
                                               .add(GoToProfilePage());
                                         }
                                       : null),
@@ -282,8 +278,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
               margin: EdgeInsets.only(top: 20, left: defaultMargin),
               child: GestureDetector(
                 onTap: () {
-                  // ignore: deprecated_member_use
-                  context.bloc<PageBloc>().add(GoToProfilePage());
+                  context.read<PageBloc>().add(GoToProfilePage());
                 },
                 child: Icon(
                   Icons.arrow_back,

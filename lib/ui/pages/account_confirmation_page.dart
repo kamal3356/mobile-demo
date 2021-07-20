@@ -18,8 +18,7 @@ class _AccountConfirmationPageState extends State<AccountConfirmationPage> {
     return WillPopScope(
       onWillPop: () async {
         context
-            // ignore: deprecated_member_use
-            .bloc<PageBloc>()
+            .read<PageBloc>()
             .add(GoToPreferencePage(widget.registrationData));
         return;
       },
@@ -40,8 +39,7 @@ class _AccountConfirmationPageState extends State<AccountConfirmationPage> {
                           alignment: Alignment.centerLeft,
                           child: GestureDetector(
                             onTap: () {
-                              // ignore: deprecated_member_use
-                              context.bloc<PageBloc>().add(GoToSplashPage());
+                              context.read<PageBloc>().add(GoToSplashPage());
                             },
                             child: Icon(Icons.arrow_back, color: Colors.black),
                           ),
@@ -91,44 +89,50 @@ class _AccountConfirmationPageState extends State<AccountConfirmationPage> {
                       : SizedBox(
                           width: 250,
                           height: 45,
-                          // ignore: deprecated_member_use
-                          child: RaisedButton(
-                              color: Color(0xFF3E9D9D),
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(8)),
-                              child: Text(
-                                "Create My Account",
-                                style: whiteTextFont.copyWith(fontSize: 16),
-                              ),
-                              onPressed: () async {
+                          // beda
+                          child: ElevatedButton(
+                            style: ButtonStyle(
+                              backgroundColor: MaterialStateProperty.all<Color>(
+                                  Color(0xFF3E9D9D)),
+                              shape: MaterialStateProperty.all<
+                                      RoundedRectangleBorder>(
+                                  RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(8))),
+                            ),
+                            child: Text(
+                              "Create My Account",
+                              style: whiteTextFont.copyWith(fontSize: 16),
+                            ),
+                            onPressed: () async {
+                              setState(() {
+                                isSigningUp = true;
+                              });
+
+                              imageFileToUpload =
+                                  widget.registrationData.profileImage;
+
+                              SignInSignUpResult result =
+                                  await AuthServices.signUp(
+                                      widget.registrationData.email,
+                                      widget.registrationData.password,
+                                      widget.registrationData.name,
+                                      widget.registrationData.selectedGenres,
+                                      widget.registrationData.selectedLang);
+
+                              if (result.user == null) {
                                 setState(() {
-                                  isSigningUp = true;
+                                  isSigningUp = false;
                                 });
 
-                                imageFileToUpload =
-                                    widget.registrationData.profileImage;
-
-                                SignInSignUpResult result =
-                                    await AuthServices.signUp(
-                                        widget.registrationData.email,
-                                        widget.registrationData.password,
-                                        widget.registrationData.name,
-                                        widget.registrationData.selectedGenres,
-                                        widget.registrationData.selectedLang);
-
-                                if (result.user == null) {
-                                  setState(() {
-                                    isSigningUp = false;
-                                  });
-
-                                  Flushbar(
-                                    duration: Duration(milliseconds: 1500),
-                                    flushbarPosition: FlushbarPosition.TOP,
-                                    backgroundColor: Color(0xFFFF5C83),
-                                    message: result.message,
-                                  )..show(context);
-                                }
-                              }))
+                                Flushbar(
+                                  duration: Duration(milliseconds: 1500),
+                                  flushbarPosition: FlushbarPosition.TOP,
+                                  backgroundColor: Color(0xFFFF5C83),
+                                  message: result.message,
+                                )..show(context);
+                              }
+                            },
+                          )),
                 ],
               )
             ],

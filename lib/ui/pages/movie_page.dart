@@ -19,8 +19,7 @@ class MoviePage extends StatelessWidget {
                 uploadImage(imageFileToUpload).then((downloadURL) {
                   imageFileToUpload = null;
                   context
-                      // ignore: deprecated_member_use
-                      .bloc<UserBloc>()
+                      .read<UserBloc>()
                       .add(UpdateData(profileImage: downloadURL));
                 });
               }
@@ -29,8 +28,7 @@ class MoviePage extends StatelessWidget {
                 children: <Widget>[
                   GestureDetector(
                     onTap: () {
-                      // ignore: deprecated_member_use
-                      context.bloc<PageBloc>().add(GoToProfilePage());
+                      context.read<PageBloc>().add(GoToProfilePage());
                     },
                     child: Container(
                       padding: EdgeInsets.all(5),
@@ -80,8 +78,7 @@ class MoviePage extends StatelessWidget {
                       GestureDetector(
                         onTap: () {
                           context
-                              // ignore: deprecated_member_use
-                              .bloc<PageBloc>()
+                              .read<PageBloc>()
                               .add(GoToWalletPage(GoToMainPage()));
                         },
                         child: Text(
@@ -136,8 +133,7 @@ class MoviePage extends StatelessWidget {
                             movies[index],
                             onTap: () {
                               context
-                                  // ignore: deprecated_member_use
-                                  .bloc<PageBloc>()
+                                  .read<PageBloc>()
                                   .add(GoToMovieDetailPage(movies[index]));
                             },
                           ),

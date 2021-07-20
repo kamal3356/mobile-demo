@@ -67,8 +67,7 @@ class _MainPageState extends State<MainPage> {
                     ),
                   ),
                   onPressed: () {
-                    // ignore: deprecated_member_use
-                    context.bloc<PageBloc>().add(GoToTopUpPage(GoToMainPage()));
+                    context.read<PageBloc>().add(GoToTopUpPage(GoToMainPage()));
                   }),
             ),
           )

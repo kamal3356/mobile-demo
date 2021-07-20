@@ -35,8 +35,7 @@ class _PreferencePageState extends State<PreferencePage> {
         widget.registrationData.password = "";
 
         context
-            // ignore: deprecated_member_use
-            .bloc<PageBloc>()
+            .read<PageBloc>()
             .add(GoToRegistrationPage(widget.registrationData));
         return;
       },
@@ -56,8 +55,7 @@ class _PreferencePageState extends State<PreferencePage> {
                         onTap: () {
                           widget.registrationData.password = "";
 
-                          // ignore: deprecated_member_use
-                          context.bloc<PageBloc>().add(
+                          context.read<PageBloc>().add(
                               GoToRegistrationPage(widget.registrationData));
                         },
                         child: Icon(Icons.arrow_back)),
@@ -111,8 +109,7 @@ class _PreferencePageState extends State<PreferencePage> {
                             widget.registrationData.selectedLang =
                                 selectedLanguage;
 
-                            // ignore: deprecated_member_use
-                            context.bloc<PageBloc>().add(
+                            context.read<PageBloc>().add(
                                 GoToAccountConfirmationPage(
                                     widget.registrationData));
                           }

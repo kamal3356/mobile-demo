@@ -168,8 +168,7 @@ class TicketViewer extends StatelessWidget {
         itemBuilder: (_, index) => GestureDetector(
               onTap: () {
                 context
-                    // ignore: deprecated_member_use
-                    .bloc<PageBloc>()
+                    .read<PageBloc>()
                     .add(GoToTicketDetailPage(sortedTickets[index]));
               },
               child: Container(

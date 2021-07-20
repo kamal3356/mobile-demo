@@ -8,19 +8,15 @@ class Wrapper extends StatelessWidget {
     if (firebaseUser == null) {
       if (!(prevPageEvent is GoToSplashPage)) {
         prevPageEvent = GoToSplashPage();
-        // ignore: deprecated_member_use
-        context.bloc<PageBloc>().add(prevPageEvent);
+        context.read<PageBloc>().add(prevPageEvent);
       }
     } else {
       if (!(prevPageEvent is GoToMainPage)) {
-        // ignore: deprecated_member_use
-        context.bloc<UserBloc>().add(LoadUser(firebaseUser.uid));
-        // ignore: deprecated_member_use
-        context.bloc<TicketBloc>().add(GetTickets(firebaseUser.uid));
+        context.read<UserBloc>().add(LoadUser(firebaseUser.uid));
+        context.read<TicketBloc>().add(GetTickets(firebaseUser.uid));
 
         prevPageEvent = GoToMainPage();
-        // ignore: deprecated_member_use
-        context.bloc<PageBloc>().add(prevPageEvent);
+        context.read<PageBloc>().add(prevPageEvent);
       }
     }
 
