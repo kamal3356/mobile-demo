@@ -3,7 +3,7 @@ Flutter project.
 ## Getting Started
 
 Kelas 2D
-1.NIM - Nama
+1.361955401091 - Hadi Rizaldi Rahmanto
 2. 
 
 Kelas 2E
