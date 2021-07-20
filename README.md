@@ -49,3 +49,4 @@ Kelas 2F
 15. 361955401156 - Niko Andrianto
 16. 361955401173 - Aldy Chezar Mahendra
 17. 361955401169 - Elan Tri Wahyudi
+18. 361955401166 - Muhamad Nusayif Jassim
