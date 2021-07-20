@@ -26,12 +26,22 @@ class _EditProfilePageState extends State<EditProfilePage> {
   @override
   Widget build(BuildContext context) {
     context
+<<<<<<< HEAD
         .read<ThemeBloc>()
+=======
+        // ignore: deprecated_member_use
+        .bloc<ThemeBloc>()
+>>>>>>> pak_alif/master
         .add(ChangeTheme(ThemeData().copyWith(primaryColor: accentColor2)));
 
     return WillPopScope(
       onWillPop: () {
+<<<<<<< HEAD
         context.read<PageBloc>().add(GoToProfilePage());
+=======
+        // ignore: deprecated_member_use
+        context.bloc<PageBloc>().add(GoToProfilePage());
+>>>>>>> pak_alif/master
 
         return;
       },
@@ -257,13 +267,23 @@ class _EditProfilePageState extends State<EditProfilePage> {
                                                 profileImageFile);
                                           }
 
+<<<<<<< HEAD
                                           context.read<UserBloc>().add(
+=======
+                                          // ignore: deprecated_member_use
+                                          context.bloc<UserBloc>().add(
+>>>>>>> pak_alif/master
                                               UpdateData(
                                                   name: nameController.text,
                                                   profileImage: profilePath));
 
                                           context
+<<<<<<< HEAD
                                               .read<PageBloc>()
+=======
+                                              // ignore: deprecated_member_use
+                                              .bloc<PageBloc>()
+>>>>>>> pak_alif/master
                                               .add(GoToProfilePage());
                                         }
                                       : null),
@@ -278,7 +298,12 @@ class _EditProfilePageState extends State<EditProfilePage> {
               margin: EdgeInsets.only(top: 20, left: defaultMargin),
               child: GestureDetector(
                 onTap: () {
+<<<<<<< HEAD
                   context.read<PageBloc>().add(GoToProfilePage());
+=======
+                  // ignore: deprecated_member_use
+                  context.bloc<PageBloc>().add(GoToProfilePage());
+>>>>>>> pak_alif/master
                 },
                 child: Icon(
                   Icons.arrow_back,

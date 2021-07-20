@@ -29,7 +29,12 @@ class _SelectSchedulePageState extends State<SelectSchedulePage> {
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: () async {
+<<<<<<< HEAD
         context.read<PageBloc>().add(GoToMovieDetailPage(widget.movieDetail));
+=======
+        // ignore: deprecated_member_use
+        context.bloc<PageBloc>().add(GoToMovieDetailPage(widget.movieDetail));
+>>>>>>> pak_alif/master
 
         return;
       },
@@ -54,7 +59,12 @@ class _SelectSchedulePageState extends State<SelectSchedulePage> {
                       child: GestureDetector(
                         onTap: () {
                           context
+<<<<<<< HEAD
                               .read<PageBloc>()
+=======
+                              // ignore: deprecated_member_use
+                              .bloc<PageBloc>()
+>>>>>>> pak_alif/master
                               .add(GoToMovieDetailPage(widget.movieDetail));
                         },
                         child: Icon(
@@ -116,7 +126,12 @@ class _SelectSchedulePageState extends State<SelectSchedulePage> {
                           ),
                           onPressed: () {
                             if (isValid) {
+<<<<<<< HEAD
                               context.read<PageBloc>().add(GoToSelectSeatPage(
+=======
+                              // ignore: deprecated_member_use
+                              context.bloc<PageBloc>().add(GoToSelectSeatPage(
+>>>>>>> pak_alif/master
                                   Ticket(
                                       widget.movieDetail,
                                       selectedTheater,

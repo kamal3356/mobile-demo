@@ -15,7 +15,12 @@ class _TopUpPageState extends State<TopUpPage> {
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     context.read<ThemeBloc>().add(
+=======
+    // ignore: deprecated_member_use
+    context.bloc<ThemeBloc>().add(
+>>>>>>> pak_alif/master
         ChangeTheme(ThemeData().copyWith(primaryColor: Color(0xFFE4E4E4))));
 
     double cardWidth =
@@ -23,7 +28,12 @@ class _TopUpPageState extends State<TopUpPage> {
 
     return WillPopScope(
       onWillPop: () async {
+<<<<<<< HEAD
         context.read<PageBloc>().add(widget.pageEvent);
+=======
+        // ignore: deprecated_member_use
+        context.bloc<PageBloc>().add(widget.pageEvent);
+>>>>>>> pak_alif/master
 
         return;
       },
@@ -38,7 +48,12 @@ class _TopUpPageState extends State<TopUpPage> {
                   margin: EdgeInsets.only(top: 20, left: defaultMargin),
                   child: GestureDetector(
                       onTap: () {
+<<<<<<< HEAD
                         context.read<PageBloc>().add(widget.pageEvent);
+=======
+                        // ignore: deprecated_member_use
+                        context.bloc<PageBloc>().add(widget.pageEvent);
+>>>>>>> pak_alif/master
                       },
                       child: Icon(Icons.arrow_back, color: Colors.black)),
                 )),
@@ -162,7 +177,12 @@ class _TopUpPageState extends State<TopUpPage> {
                               color: Color(0xFF3E9D9D),
                               onPressed: (selectedAmount > 0)
                                   ? () {
+<<<<<<< HEAD
                                       context.read<PageBloc>().add(GoToSuccessPage(
+=======
+                                      // ignore: deprecated_member_use
+                                      context.bloc<PageBloc>().add(GoToSuccessPage(
+>>>>>>> pak_alif/master
                                           null,
                                           FlutixTransaction(
                                               userID: (userState as UserLoaded)

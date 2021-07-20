@@ -1,7 +1,13 @@
 part of 'shared.dart';
 
+<<<<<<< HEAD
 getImage() async {
   var image = await ImagePicker().getImage(source: ImageSource.gallery);
+=======
+Future<File> getImage() async {
+  // ignore: deprecated_member_use
+  var image = await ImagePicker.pickImage(source: ImageSource.gallery);
+>>>>>>> pak_alif/master
   return image;
 }
 

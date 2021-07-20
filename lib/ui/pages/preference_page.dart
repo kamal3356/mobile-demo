@@ -35,7 +35,12 @@ class _PreferencePageState extends State<PreferencePage> {
         widget.registrationData.password = "";
 
         context
+<<<<<<< HEAD
             .read<PageBloc>()
+=======
+            // ignore: deprecated_member_use
+            .bloc<PageBloc>()
+>>>>>>> pak_alif/master
             .add(GoToRegistrationPage(widget.registrationData));
         return;
       },
@@ -55,7 +60,12 @@ class _PreferencePageState extends State<PreferencePage> {
                         onTap: () {
                           widget.registrationData.password = "";
 
+<<<<<<< HEAD
                           context.read<PageBloc>().add(
+=======
+                          // ignore: deprecated_member_use
+                          context.bloc<PageBloc>().add(
+>>>>>>> pak_alif/master
                               GoToRegistrationPage(widget.registrationData));
                         },
                         child: Icon(Icons.arrow_back)),
@@ -109,7 +119,12 @@ class _PreferencePageState extends State<PreferencePage> {
                             widget.registrationData.selectedLang =
                                 selectedLanguage;
 
+<<<<<<< HEAD
                             context.read<PageBloc>().add(
+=======
+                            // ignore: deprecated_member_use
+                            context.bloc<PageBloc>().add(
+>>>>>>> pak_alif/master
                                 GoToAccountConfirmationPage(
                                     widget.registrationData));
                           }

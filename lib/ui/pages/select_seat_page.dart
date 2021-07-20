@@ -17,7 +17,12 @@ class _SelectSeatPageState extends State<SelectSeatPage> {
     return WillPopScope(
         onWillPop: () async {
           context
+<<<<<<< HEAD
               .read<PageBloc>()
+=======
+              // ignore: deprecated_member_use
+              .bloc<PageBloc>()
+>>>>>>> pak_alif/master
               .add(GoToSelectSchedulePage(widget.ticket.movieDetail));
 
           return;
@@ -43,7 +48,12 @@ class _SelectSeatPageState extends State<SelectSeatPage> {
                           padding: EdgeInsets.all(1),
                           child: GestureDetector(
                             onTap: () {
+<<<<<<< HEAD
                               context.read<PageBloc>().add(
+=======
+                              // ignore: deprecated_member_use
+                              context.bloc<PageBloc>().add(
+>>>>>>> pak_alif/master
                                   GoToSelectSchedulePage(
                                       widget.ticket.movieDetail));
                             },
@@ -116,7 +126,12 @@ class _SelectSeatPageState extends State<SelectSeatPage> {
                           ),
                           onPressed: selectedSeats.length > 0
                               ? () {
+<<<<<<< HEAD
                                   context.read<PageBloc>().add(GoToCheckoutPage(
+=======
+                                  // ignore: deprecated_member_use
+                                  context.bloc<PageBloc>().add(GoToCheckoutPage(
+>>>>>>> pak_alif/master
                                       widget.ticket
                                           .copyWith(seats: selectedSeats)));
                                 }

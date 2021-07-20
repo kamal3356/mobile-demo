@@ -67,7 +67,12 @@ class _MainPageState extends State<MainPage> {
                     ),
                   ),
                   onPressed: () {
+<<<<<<< HEAD
                     context.read<PageBloc>().add(GoToTopUpPage(GoToMainPage()));
+=======
+                    // ignore: deprecated_member_use
+                    context.bloc<PageBloc>().add(GoToTopUpPage(GoToMainPage()));
+>>>>>>> pak_alif/master
                   }),
             ),
           )
