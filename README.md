@@ -42,13 +42,12 @@ Kelas 2F
 10.361955401152 - Satria Teguh Perkasa
 
 11.361955401157 - Mukhamad Ivan Alvian
-12. 361955401150 - Yasika Ekki Permana
 
-11. 361955401150 - Yasika Ekki Permana
-12. 361955401153 - hilmi bakhtiar
-13. 361955401170 - Nataryn Silkynta Wiridilla Malawangi
-14. 361955401151 - Anisya Mega Rifdiana
-15. 361955401161 - Via Antika
-16. 361955401165 - Erica Septiyana 
+12. 361955401150 - Yasika Ekki Permana
+13. 361955401153 - hilmi bakhtiar
+14. 361955401170 - Nataryn Silkynta Wiridilla Malawangi
+15. 361955401151 - Anisya Mega Rifdiana
+16. 361955401161 - Via Antika
+17. 361955401165 - Erica Septiyana 
 
 
