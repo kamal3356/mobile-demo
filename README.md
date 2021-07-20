@@ -3,7 +3,7 @@ Flutter project.
 ## Getting Started
 
 Kelas 2D
-1.361955401091 - Hadi Rizaldi Rahmanto 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. 18. 19. 20. 21. 361955401112 - Muhammad Arif Purnama Aji
+1.361955401091 - Hadi Rizaldi Rahmanto 2. 3. 4. 5. 6. 7.361955401097 - Dino Alwi Patriardi 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. 18. 19. 20. 21. 361955401112 - Muhammad Arif Purnama Aji
 
 Kelas 2E
 
@@ -49,3 +49,4 @@ Kelas 2F
 15. 361955401156 - Niko Andrianto
 16. 361955401173 - Aldy Chezar Mahendra
 17. 361955401169 - Elan Tri Wahyudi
+18. 361955401166 - Muhamad Nusayif Jassim
