@@ -4,13 +4,13 @@ Flutter project.
 
 Kelas 2D
 
-1.361955401091 - Hadi Rizaldi Rahmanto 
-2.361955401092 - Mei Nurfatdilah 
-3. 
+1. 361955401091 - Hadi Rizaldi Rahmanto 
+2. 361955401092 - Mei Nurfatdilah 
+3. 361955401093 - Latiful Kamal
 4. 
 5. 
 6. 
-7.361955401097 - Dino Alwi Patriardi 
+7. 361955401097 - Dino Alwi Patriardi 
 8.
 9.
 10. 361955401101 - Maldini Dwi Putra
@@ -24,7 +24,7 @@ Kelas 2D
 18.
 19.
 20.
-21.361955401112 - Muhammad Arif Purnama Aji
+21. 361955401112 - Muhammad Arif Purnama Aji
 22.
 23.
 25.
